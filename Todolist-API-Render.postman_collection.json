@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "5d1befc3-c3c5-4304-b3cb-aa9ee8e8d937",
+		"name": "Todolist-API-Render",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27723176"
+	},
+	"item": [
+		{
+			"name": "取得所有todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://todolistapi-98f2.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolistapi-98f2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"今天要寫程式1小時\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolistapi-98f2.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolistapi-98f2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolistapi-98f2.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolistapi-98f2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolistapi-98f2.onrender.com/todos/",
+					"protocol": "https",
+					"host": [
+						"todolistapi-98f2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改單筆todo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"今天要整天寫程式\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolistapi-98f2.onrender.com/todos/",
+					"protocol": "https",
+					"host": [
+						"todolistapi-98f2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
